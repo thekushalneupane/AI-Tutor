@@ -1,33 +1,24 @@
 import os
-from openai import OpenAI
+from google import genai
 from dotenv import load_dotenv
 
 load_dotenv()
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 conversation_history = []
 
 def chat(user_message):
-    conversation_history.append({
-        "role": "user",
-        "content": user_message
-    })
+    conversation_history.append({"role": "user", "parts": [{"text": user_message}]})
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "system", "content": "You are a helpful academic tutor."}
-        ] + conversation_history
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=conversation_history,
+        config={"system_instruction": "You are a helpful academic tutor."}
     )
 
-    reply = response.choices[0].message.content
-
-    conversation_history.append({
-        "role": "assistant",
-        "content": reply
-    })
-
+    reply = response.text
+    conversation_history.append({"role": "model", "parts": [{"text": reply}]})
     return reply
 
 def main():
@@ -36,14 +27,11 @@ def main():
 
     while True:
         user_input = input("You: ").strip()
-
         if user_input.lower() == "quit":
             print("Goodbye!")
             break
-
         if not user_input:
             continue
-
         response = chat(user_input)
         print(f"\nTutor: {response}\n")
 
