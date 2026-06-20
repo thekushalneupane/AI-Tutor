@@ -28,15 +28,15 @@ ai-tutor/
 ├── .env                  # API keys (not committed)
 ├── .gitignore
 ├── requirements.txt
-├── api.py                # Step 1: Core API integration + conversation history
-├── zeroshot.py           # Step 2: Zero-shot prompting
-├── fewshot.py            # Step 3: Few-shot prompting (quiz generator)
-├── chainOfThought.py          # Step 4: Chain-of-Thought prompting
-├── rolePrompting.py         # Step 5: Role prompting
+├── api.py                 # Step 1: Core API integration + conversation history
+├── zeroshot.py            # Step 2: Zero-shot prompting
+├── fewshot.py             # Step 3: Few-shot prompting (quiz generator)
+├── chainOfThought.py      # Step 4: Chain-of-Thought prompting
+├── rolePrompting.py       # Step 5: Role prompting
 ├── promptTemplates.py     # Step 6: Prompt templates
-├── chains.py        # Step 7: LangChain chains
-├── memory.py        # Step 8: Memory system
-├── agents.py        # Step 9: Agents & tools
+├── chains.py              # Step 7: LangChain chains
+├── memory.py              # Step 8: Memory system
+├── agents.py              # Step 9: Agents & tools
 └── main.py                # Step 10: Final integration
 ```
 
