@@ -34,8 +34,8 @@ ai-tutor/
 ├── chainOfThought.py          # Step 4: Chain-of-Thought prompting
 ├── rolePrompting.py         # Step 5: Role prompting
 ├── promptTemplates.py     # Step 6: Prompt templates
-├── step7_chains.py        # Step 7: LangChain chains
-├── step8_memory.py        # Step 8: Memory system
+├── chains.py        # Step 7: LangChain chains
+├── memory.py        # Step 8: Memory system
 ├── step9_agents.py        # Step 9: Agents & tools
 └── main.py                # Step 10: Final integration
 ```
@@ -80,8 +80,8 @@ ai-tutor/
 | 4 | Chain-of-Thought Prompting | ✅ Done |
 | 5 | Role Prompting | ✅ Done |
 | 6 | Prompt Templates | ✅ Done |
-| 7 | LangChain Chains | 🔲 Pending |
-| 8 | Memory System | 🔲 Pending |
+| 7 | LangChain Chains | ✅ Done |
+| 8 | Memory System | ✅ Done |
 | 9 | Agents & Tools | 🔲 Pending |
 | 10 | Final Integration | 🔲 Pending |
 
