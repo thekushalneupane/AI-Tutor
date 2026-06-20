@@ -31,9 +31,9 @@ ai-tutor/
 ├── api.py                # Step 1: Core API integration + conversation history
 ├── zeroshot.py           # Step 2: Zero-shot prompting
 ├── fewshot.py            # Step 3: Few-shot prompting (quiz generator)
-├── step4_cot.py          # Step 4: Chain-of-Thought prompting
-├── step5_roles.py         # Step 5: Role prompting
-├── step6_templates.py     # Step 6: Prompt templates
+├── chainOfThought.py          # Step 4: Chain-of-Thought prompting
+├── rolePrompting.py         # Step 5: Role prompting
+├── promptTemplates.py     # Step 6: Prompt templates
 ├── step7_chains.py        # Step 7: LangChain chains
 ├── step8_memory.py        # Step 8: Memory system
 ├── step9_agents.py        # Step 9: Agents & tools
@@ -77,9 +77,9 @@ ai-tutor/
 | 1 | LLM API Integration | ✅ Done |
 | 2 | Zero-Shot Prompting | ✅ Done |
 | 3 | Few-Shot Prompting | ✅ Done |
-| 4 | Chain-of-Thought Prompting | 🔲 In progress |
-| 5 | Role Prompting | 🔲 Pending |
-| 6 | Prompt Templates | 🔲 Pending |
+| 4 | Chain-of-Thought Prompting | ✅ Done |
+| 5 | Role Prompting | ✅ Done |
+| 6 | Prompt Templates | ✅ Done |
 | 7 | LangChain Chains | 🔲 Pending |
 | 8 | Memory System | 🔲 Pending |
 | 9 | Agents & Tools | 🔲 Pending |
