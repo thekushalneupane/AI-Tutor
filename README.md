@@ -36,7 +36,7 @@ ai-tutor/
 ├── promptTemplates.py     # Step 6: Prompt templates
 ├── chains.py        # Step 7: LangChain chains
 ├── memory.py        # Step 8: Memory system
-├── step9_agents.py        # Step 9: Agents & tools
+├── agents.py        # Step 9: Agents & tools
 └── main.py                # Step 10: Final integration
 ```
 
@@ -82,8 +82,8 @@ ai-tutor/
 | 6 | Prompt Templates | ✅ Done |
 | 7 | LangChain Chains | ✅ Done |
 | 8 | Memory System | ✅ Done |
-| 9 | Agents & Tools | 🔲 Pending |
-| 10 | Final Integration | 🔲 Pending |
+| 9 | Agents & Tools | ✅ Done |
+| 10 | Final Integration | ✅ Done |
 
 ## Notes
 
